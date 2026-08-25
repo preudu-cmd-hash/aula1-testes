@@ -22,7 +22,7 @@ const totalPedido = (valores) => {
 }
 
 const buscarPreco = (cardapio, nome) => {
-    return cardapio.find((item) => item.nome === nome)?.preco || -1;
+    return cardapio.find(item => item.nome === nome)?.preco || null;
 }
 
 const teste = (titulo, esperado, retornado) => {
